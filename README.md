@@ -1,17 +1,33 @@
-# Chợ Đổi — Những điều ở lại
+# Chợ Không Tiền
 
-Chợ Đổi là game phiêu lưu pixel art một người chơi, lấy bối cảnh một phiên chợ không dùng tiền. Từ một chiếc bút xanh, người chơi lắng nghe nhu cầu của từng nhân vật, thương lượng và đổi dần lấy chiếc loa cho buổi gặp bạn. Sau đó, người chơi có thể mang loa về hoặc góp sức cùng người dân tổ chức Đêm Chợ Sáng.
+**Bạn có thể đổi một chiếc bút xanh lấy một chiếc loa không?**
 
-Game có 5 khu vực, 25 nhân vật, 53 vật phẩm, 11 công thức chế tạo, 5 nhiệm vụ phụ, 8 cảnh truyện tương tác và 4 kết thúc.
+Bạn đến Thị trấn Nắng với một chiếc bút trong túi và lời hẹn mang loa đến buổi gặp bạn bè. Chị Mai đang thiếu bút để ghi nhãn hàng. Chú Tâm có một chiếc loa cũ và đang tìm truyện để đọc cùng con. Giữa hai quầy hàng là cả một phiên chợ đang chờ bạn khám phá.
 
-## Chơi và chạy mã nguồn
+**Chợ Không Tiền** là game phiêu lưu pixel art một người chơi. Bạn đi qua các khu chợ, nghe chuyện của người dân và tìm xem ai đang cần món đồ mình có. Nếu một món chưa đủ, bạn có thể ghép nhiều món vào cùng một đề nghị hoặc gom nguyên liệu để chế tạo món phù hợp.
 
-- [Chơi trên trình duyệt](https://cho-doi-thi-tran-nang.meshedhawk2.chatgpt.site/)
-- Phục vụ thư mục repo bằng một máy chủ tĩnh, chẳng hạn `python3 -m http.server 8000`, rồi mở `http://localhost:8000`. `index.html` là điểm vào.
-- Mở `cho-doi-offline.html` trực tiếp trên trình duyệt để chơi bằng một tệp tự chứa. Tiến trình được lưu cục bộ nếu trình duyệt cho phép.
+Khi đổi được loa, bạn có thể mang về cho buổi gặp bạn bè hoặc góp loa cho **Đêm Chợ Sáng**. Nếu ở lại, bạn sẽ thấy những việc mình làm để lại dấu vết trong thị trấn. Góc đọc sách có thêm đèn, một lá thư đến tay người nhận, còn sân khấu dần sáng lên. Câu chuyện kết thúc theo những lựa chọn của bạn.
 
-Dùng WASD hoặc phím mũi tên để di chuyển, phím E để trò chuyện khi đứng gần nhân vật. Có thể bấm tên nhân vật hoặc chạm bản đồ. Hỏi nhu cầu, chọn món muốn nhận, thêm món đem đổi và chọn cách thương lượng.
+## Cách chơi
+
+- Dùng **WASD** hoặc **phím mũi tên** để di chuyển. Nhấn **E** khi đứng gần một nhân vật hoặc bấm vào tên họ để trò chuyện.
+- Hỏi nhân vật đang cần gì, chọn món muốn nhận rồi thêm món bạn muốn đem đổi.
+- Khi thương lượng theo nhu cầu, chọn lời đề nghị phù hợp với món đồ và câu chuyện vừa nghe. Bạn có thể đổi cách đề nghị nếu họ chưa đồng ý.
+
+[**Chơi Chợ Không Tiền trên trình duyệt**](https://cho-doi-thi-tran-nang.meshedhawk2.chatgpt.site/)
+
+## Chạy game trên máy
+
+Để chơi offline, tải tệp [`cho-doi-offline.html`](cho-doi-offline.html) rồi mở bằng trình duyệt. Tiến trình được lưu trên máy nếu trình duyệt cho phép.
+
+Để chạy từ mã nguồn, mở Terminal trong thư mục repo và chạy:
+
+```bash
+python3 -m http.server 8000
+```
+
+Sau đó mở [http://localhost:8000](http://localhost:8000) để vào game.
 
 ## Sử dụng AI
 
-ChatGPT/Codex hỗ trợ phát triển ý tưởng, kịch bản, hội thoại, mã nguồn, hình pixel art bằng Canvas và kiểm tra logic. Khi chơi, NPC phản hồi bằng hội thoại theo lựa chọn và quy tắc được lập trình sẵn. Game không gọi dịch vụ AI khi chạy.
+ChatGPT và Codex hỗ trợ phát triển ý tưởng, viết kịch bản và hội thoại, lập trình, tạo hình pixel art bằng Canvas và kiểm tra logic game. Khi bạn chơi, các nhân vật phản hồi theo lựa chọn và quy tắc được lập trình sẵn. Toàn bộ trò chơi chạy trực tiếp trong trình duyệt.
